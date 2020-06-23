@@ -1,7 +1,7 @@
 from pages.base_page import *
 from pages.Drivers import *
-from Objects.object_properties import *
 import pytest
+from Objects.object_properties import Element
 import time
 
 
@@ -11,6 +11,7 @@ class TestLogin:
     def setup(self):
         self.driver = drivers("chrome")
         self.bp = BasePage(self.driver)
+        self.ele = Element()
 
 
     @pytest.mark.parametrize('tcid',["1"])
@@ -19,7 +20,7 @@ class TestLogin:
         time.sleep(2)
         # self.driver.find_element(object_properties.visit_button).click()
         # self.driver.find_element_by_class_name("tds-o-btn_group--item").click()
-        self.driver.find_element_by_link_text(model3_link).click()
+        self.driver.find_element_by_name(self.ele.order_now).click()
 
     def teardown(self):
         self.driver.close()
