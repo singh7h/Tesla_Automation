@@ -13,14 +13,13 @@ class TestLogin:
         self.bp = BasePage(self.driver)
         self.ele = Element()
 
-
     @pytest.mark.parametrize('tcid',["1"])
     def test_open_url(self, setup, tcid):
         self.bp.open_browser("https://www.tesla.com")
         time.sleep(2)
-        # self.driver.find_element(object_properties.visit_button).click()
-        # self.driver.find_element_by_class_name("tds-o-btn_group--item").click()
-        self.driver.find_element_by_name(self.ele.order_now).click()
+        model_s = self.driver.find_element_by_link_text(Element.modelS_link)
+        self.bp.click_button(model_s)
+        time.sleep(2)
 
     def teardown(self):
         self.driver.close()
