@@ -17,6 +17,7 @@ class TestLogin:
     def test_open_url(self, setup, tcid):
         self.bp.open_browser("https://www.tesla.com")
         time.sleep(2)
+
         model_s = self.driver.find_element_by_link_text(Element.modelS_link)
         self.bp.click_button(model_s)
         time.sleep(2)
