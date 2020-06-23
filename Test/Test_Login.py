@@ -1,5 +1,6 @@
 from pages.base_page import *
 from pages.Drivers import *
+from Objects.object_properties import *
 import pytest
 import time
 
@@ -11,13 +12,14 @@ class TestLogin:
         self.driver = drivers("chrome")
         self.bp = BasePage(self.driver)
 
-    @pytest.mark.parametrize('tcid',["1","2","3"])
+
+    @pytest.mark.parametrize('tcid',["1"])
     def test_open_url(self, setup, tcid):
         self.bp.open_browser("https://www.tesla.com")
         time.sleep(2)
         # self.driver.find_element(object_properties.visit_button).click()
         # self.driver.find_element_by_class_name("tds-o-btn_group--item").click()
-        time.sleep(2)
+        self.driver.find_element_by_link_text(model3_link).click()
 
     def teardown(self):
         self.driver.close()
