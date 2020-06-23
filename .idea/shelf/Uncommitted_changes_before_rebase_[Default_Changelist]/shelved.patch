@@ -1,0 +1,34 @@
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ProjectModuleManager\">\n    <modules>\n      <module fileurl=\"file://$PROJECT_DIR$/../Peek.com/.idea/Peek.com.iml\" filepath=\"$PROJECT_DIR$/../Peek.com/.idea/Peek.com.iml\" />\n      <module fileurl=\"file://$PROJECT_DIR$/.idea/Tesla_site.iml\" filepath=\"$PROJECT_DIR$/.idea/Tesla_site.iml\" />\n    </modules>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/modules.xml	(revision 8a6ecdee0f5ccc6a5d9605391d23071989781833)
++++ .idea/modules.xml	(date 1592938002702)
+@@ -2,7 +2,6 @@
+ <project version="4">
+   <component name="ProjectModuleManager">
+     <modules>
+-      <module fileurl="file://$PROJECT_DIR$/../Peek.com/.idea/Peek.com.iml" filepath="$PROJECT_DIR$/../Peek.com/.idea/Peek.com.iml" />
+       <module fileurl="file://$PROJECT_DIR$/.idea/Tesla_site.iml" filepath="$PROJECT_DIR$/.idea/Tesla_site.iml" />
+     </modules>
+   </component>
+Index: .idea/Tesla_site.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<module type=\"PYTHON_MODULE\" version=\"4\">\n  <component name=\"NewModuleRootManager\">\n    <content url=\"file://$MODULE_DIR$\">\n      <excludeFolder url=\"file://$MODULE_DIR$/venv\" />\n    </content>\n    <orderEntry type=\"jdk\" jdkName=\"Python 3.8\" jdkType=\"Python SDK\" />\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\n    <orderEntry type=\"module\" module-name=\"Peek.com\" />\n  </component>\n  <component name=\"PackageRequirementsSettings\">\n    <option name=\"requirementsPath\" value=\"\" />\n  </component>\n  <component name=\"TestRunnerService\">\n    <option name=\"PROJECT_TEST_RUNNER\" value=\"pytest\" />\n  </component>\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/Tesla_site.iml	(revision 8a6ecdee0f5ccc6a5d9605391d23071989781833)
++++ .idea/Tesla_site.iml	(date 1592938002693)
+@@ -6,7 +6,6 @@
+     </content>
+     <orderEntry type="jdk" jdkName="Python 3.8" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+-    <orderEntry type="module" module-name="Peek.com" />
+   </component>
+   <component name="PackageRequirementsSettings">
+     <option name="requirementsPath" value="" />
